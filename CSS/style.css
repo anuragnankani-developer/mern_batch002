@@ -1,0 +1,30 @@
+      #lome{
+            color: chocolate;
+            font-size: 20px;
+            background-color: green;
+            border: 2px solid black;
+        }
+
+        #lome-1{
+            padding: 10px;
+
+        }
+
+         .myClass-1{
+            padding: 20px;
+            margin-top: 40px;
+            color: green;
+        }
+
+        .myClass{
+            background-color: gray;
+            color: aqua;
+            border: 2px solid green;
+            width: 200px;
+        }
+
+        .colour{
+            color: green;
+            border: 2px solid green;
+        }
+   
