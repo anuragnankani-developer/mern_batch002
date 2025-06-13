@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        .main{
+            display: flex;
+            margin-left: 30%;
+        }
+
+        .box{
+            border: 2px solid;
+            width:150px;
+            height:150px;
+            background-color: blueviolet;
+            
+        }
+
+        @media screen and (max-width:938px) {
+            body{
+            background-color: red;
+        }
+        .main{
+            flex-direction: column;
+        }
+
+        .box{
+            width: 120px;
+            height: 120px;
+            background-color: yellow;
+            font-size: 12px;
+        }
+
+        .box-3{
+            width: 80px;
+            height: 100px;
+            background-color: aqua;
+        }
+            
+        }
+
+        @media screen and (max-width:718px) {
+
+            body{
+                background-color: green;
+            }
+            
+        }
+
+        /* @media screen  and (max-width:331px) {
+
+            body{
+                background-color: yellowgreen;
+            }
+
+            li{
+                font-size: 15px;
+            }
+            
+        } */
+
+     
+
+
+        @media screen and (min-width:300px) and (max-width:318px) {
+
+            body{
+                background-color: black;
+            }
+            
+        }
+
+           @media screen and (min-width:200px) and (max-width:271px) {
+
+            body{
+                background-color: yellowgreen;
+            }
+
+            
+
+            
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            background-color: black;
+            color: aliceblue;
+            font-size: 20px;
+            justify-content: end;
+            align-items: center;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li> Home </li>
+        <li> About us </li>
+        <li> Contact us </li>
+        <li> Help </li>
+
+    </ul>
+
+
+    <!-- <div class="main">
+        <div class="box"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, sed? </div>
+        <div class="box"></div>
+        <div class="box box-3 "></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+     -->
+</body>
+</html>
