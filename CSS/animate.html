@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes myAnimation {
+        0% {
+          left: 0px;
+          top: 0;
+          background-color: blue;
+        }
+
+        25% {
+          left: 300px;
+          top: 0;
+          background-color: red;
+          transform: rotateY(360deg);
+        }
+
+        50% {
+          left: 600px;
+          top: 0;
+          background-color: chartreuse;
+          transition: linear;
+          transform: rotate3d(90deg);
+        }
+        75% {
+          left: 800px;
+          top: 0;
+          background-color: blue;
+        }
+        100% {
+          left: 900px;
+          top: 0;
+        }
+      }
+
+      .main {
+        border: 2px solid;
+        width: 50px;
+        height: 50px;
+        background-color: aquamarine;
+        animation-name: myAnimation;
+        animation-duration: 5s;
+        position: relative;
+        animation-fill-mode: forwards;
+      }
+      .btn {
+        width: 100px;
+        height: 50px;
+      }
+
+      @keyframes hoverBackground {
+        0% {
+          opacity: 0;
+          transform: scale(1, 1);
+        }
+        50% {
+          opacity: 0.5;
+          transform: scale(2, 2);
+        }
+        100% {
+          opacity: 0.4;
+          transform: scale(4, 4);
+          background-color: aqua;
+        }
+      }
+      .blank {
+        background-color: green;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        opacity: 0;
+        animation-name: hoverBackground;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
+      .box {
+        margin-top: 100px;
+        background-color: green;
+        width: 100px;
+        height: 50px;
+        transform: rotate(40deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">Hello</div>
+    <div class="blank"></div>
+    <button class="btn">Click Me</button>
+
+    <div class="box"></div>
+  </body>
+</html>
