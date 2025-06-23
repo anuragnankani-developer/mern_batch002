@@ -6,40 +6,70 @@
     <title>Document</title>
 
     <style>
-        /* p:last-child{
-            background-color: aqua;
+        /* p:first-child{
+            color: red;
+        }
+        p:last-child{
+            color: blue;
         } */
-
-        p:nth-child(2n + 1){
+        /* p:nth-child(2n + 1){
+            color: pink;
+        } */
+        p:nth-last-child(2n){
             background-color: green;
         }
 
-        p:nth-child(3n + 1){
-            background-color: red;
+        strong:not(.str, .strong){
+            color: gray;
         }
+
+        div:empty{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        .btn:hover{
+            background-color: gray;
+            padding: 30px;
+            font-size: 50px;
+        }
+
+
+
     </style>
+
 </head>
 <body>
+     <p> i am a paragraph tag </p>
+     <button class="btn" >click me </button>
 
-    <p>Hello</p>
-    <p>Hey i am paragraph</p>
+    <div></div>
+
+    <strong>       i am strong tag</strong>
+    <strong class="str">i am strong tag</strong>
+    <strong>i am strong tag</strong>
+    <strong>i am strong tag</strong>
+    <strong class="strong" >i am strong tag</strong>
 
     <div>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tenetur. </p>
+    <p>      i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
+    <p> i am a paragraph tag </p>
 
     </div>
-
-    <b> i am a bold tag</b>
-
-   
+    
+    <h1>heading</h1>
+    <div>herll</div>
     
 </body>
 </html>
