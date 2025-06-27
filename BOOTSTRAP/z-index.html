@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div-1 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        /* opacity: 0.6; */
+        position: absolute;
+        z-index: 1;
+        margin: 50px;
+      }
+      .div-2 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+      }
+      .div-3 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: absolute;
+        z-index: 2;
+        margin: 100px;
+      }
+
+      .main {
+        margin-top: 100px;
+        height: 100px;
+        /* background: linear-gradient(to right, red 10%, blue 50%, black, green); */
+        background: linear-gradient(
+          45deg,
+          rgb(219, 86, 86),
+          rgb(110, 110, 182),
+          rgb(86, 74, 74),
+          rgb(49, 80, 49)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-3"></div>
+    <div class="div-1"></div>
+    <div class="div-2"></div>
+
+    <div class="main">Helloooo</div>
+  </body>
+</html>
