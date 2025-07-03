@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 30;
+
+      if (a == null) {
+        a = 10;
+      } else {
+        console.log(a);
+      }
+
+      console.log("value of a is:", a);
+
+      let age = 9;
+
+      if (age > 10 || age < 18) {
+        console.log("Not eligible for vote");
+      } else if (age >= 18) {
+        console.log("Eligible for vote");
+      } else if (age >= 60) {
+        console.log("Eligible for vote and also he/she is an senior citizen");
+      } else {
+        console.log("He/She is a kid");
+      }
+
+
+
+      let ages = 130;
+
+      if( ages >=2 && ages <= 10 ){
+        console.log("Half ticket will be charged");       
+      }else if(ages > 10 && ages <= 60 ){
+console.log("Full ticket will be charged");
+      }else if(ages > 60 && ages < 100){
+        console.log("You will get 30% discount")
+      }else if(ages >=100 && ages < 120 || ages >=130 ){
+         console.log("Will give you a ticket fare as a gift")
+      }else{
+        console.log("No need to buy a ticket");
+        
+      }
+
+    </script>
+  </body>
+</html>
