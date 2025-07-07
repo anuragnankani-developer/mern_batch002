@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //PUSH
+        let arr = [1,2,3,4,5];
+        arr.push(7)
+        console.log(arr);
+
+        //POP
+        let num = [1,2,9,8,0,1];
+        num.pop()
+        console.log(num);
+
+        //SHIFT
+        let shiftArray = [10,11,12,13];
+        shiftArray.shift()
+        console.log(shiftArray)
+
+        //UNSHIFT
+        let unShiftArray = [10,11,12,13];
+        unShiftArray.unshift(100)
+        console.log(unShiftArray);
+
+        //SORT
+
+        let alphabet = ['x','a','c','b','a'];
+        alphabet.sort()
+        console.log(alphabet);
+
+        let numeric = [8,9,3,2,6,7,1];
+        numeric.sort()
+        console.log(numeric);
+
+        let doubleDigit = [9,5,10,11,12,8,6,0];
+        //increment
+        doubleDigit.sort((a,b)=>{
+            return a - b;
+        })
+
+        //decrement
+        doubleDigit.sort((a,b)=>{
+            return b - a;
+        })
+        console.log(doubleDigit);
+
+        //REVERSE
+         let alphabetReverse = ['x','a','c','b','a'];
+          alphabetReverse.reverse()
+        console.log(alphabetReverse);
+
+        let studentName = ['alekh','aadarsh','chetan'];
+        studentName.reverse()
+        console.log(studentName);
+        
+        //INDEXOF
+        let findIndex = [5,3,6,3,7];
+        
+        console.log(findIndex);
+        
+let friends = ['chetan','aadarsh','alekh','avantika','nimesh','aadarsh'];
+ let findTheIndexOfAadarsh = friends.indexOf("aadarsh")
+//  friends = [1]
+console.log(findTheIndexOfAadarsh)
+
+        //LASTINDEXOF
+        let allDost = ['chetan','aadarsh','alekh','avantika','nimesh','aadarsh'];
+ let findTheLastIndexOfAadarsh = friends.lastIndexOf("aadarsh")
+console.log(findTheLastIndexOfAadarsh)
+
+
+    </script>
+
+    
+</body>
+</html>
