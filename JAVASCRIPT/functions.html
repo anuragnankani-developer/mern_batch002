@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="firstFunction()" >Click me</button>
+    <button ondblclick="firstFunction()" >Double Click me</button>
+    <button onmouseover="firstFunction()" >Run on Mouse Over</button>
+    <button onmouseout="firstFunction()" >Run on Mouse Out</button>
+
+    <script>
+        // normal function or named function and function declaration
+        function firstFunction(){
+            let a = 11;
+            let b = 20;
+            if(a == 10){
+                console.log('Yes a is equal to 10')
+            }else{
+                console.log("No, a is not equal");
+            }              
+        }
+        // self-invoke function
+        function output(){
+            console.log('i am self invoke function');
+        }
+        output()
+
+        function addition(a, b,c, d){
+            console.log("value of d:", d)
+            console.log("a + b =",  a + b + c + d)
+        }
+
+        addition("10","10","alekh")
+        // addition(10,10,"alekh")
+        var a ;
+        console.log(a)
+        
+
+    </script>
+    
+</body>
+</html>
