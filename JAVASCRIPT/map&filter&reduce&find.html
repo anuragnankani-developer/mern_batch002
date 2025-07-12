@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,2,1,10];
+        let data = arr.map((value, index, array)=>{
+            // console.log(value * value);
+        })
+
+        let arrF = [1,2,3,4,5,3,4,5,9,1,2,3]
+
+        let filterData = arrF.filter((value,index)=>{
+            return value === 3  
+        }
+    )
+    // console.log('filter:',filterData)
+
+    let arr2 = [1,2,3,4,5,3,4,5,9,1,2,3]
+    let findData = arr2.find((value,index)=>{
+        return value === 3 
+    })
+        //  console.log('find:',findData)
+
+
+         let myArray =[1,2,3,4,5,6];
+        //  let reduceArray = myArray.reduce((accumulator,currentValue)=>{
+        //     console.log(accumulator)
+        //         return accumulator + currentValue
+                
+        //  }) 
+        let reduceArray = myArray.reduce((accumulator,currentValue)=>{
+            console.log(accumulator)
+                return accumulator + currentValue ;
+                
+         },1000) //1000 is innitial value
+         console.log(reduceArray)
+    </script>
+    
+</body>
+</html>
