@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = "html data"
+        let arr = [];
+        let obj={
+            name:"chetan",
+            mobile: 8787876567
+        }
+        let newObj = {
+            name:"alekh",
+            mobile:989898967
+        }
+        arr.push(newObj,obj)
+        console.log(arr,'arrrrrr');
+        localStorage.setItem("myData",JSON.stringify(arr))
+
+       let getObj = JSON.parse(localStorage.getItem('myData'))
+       console.log(getObj);
+    //    localStorage.removeItem("myObj");
+    //    localStorage.clear();
+
+
+
+    //     console.log(localStorage.getItem("myData"));
+    //     let jsonData = localStorage.getItem("myData")
+    //    console.log(jsonData.name);
+
+    </script>
+    
+</body>
+</html>

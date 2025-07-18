@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [
+        "deepak",
+        22,
+        "indore",
+        "cricket",
+        "madhya Pradesh",
+        "India",
+        ["basketball", "abcd"]
+      ];
+      // let fname = arr[0];
+      // console.log(fname);
+      // let age =arr[1];
+      // console.log(age);
+      // let place = arr[2];
+      // console.log(place);
+      // let sports = arr[3];
+      // console.log(sports);
+      // let state = arr[4];
+      // console.log(state);
+
+      // destructuring of array - ES-6
+      let [fname, age, place, sports, state, country, [anotherSport, alpha]] = arr;
+      console.log(fname);
+      console.log(age);
+      console.log(place);
+      console.log(sports);
+      console.log(state);
+      console.log(anotherSport);
+      console.log(alpha);
+    </script>
+  </body>
+</html>

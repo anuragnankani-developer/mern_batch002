@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let obj = {
+            name:"chetan",
+            age: 20,
+            hobby: "cricket",
+            place:{
+                city: ["indore","pitampur"],
+                state: "madhya pradesh"
+            } 
+        };
+
+        let { name:fname, age, hobby, place:{city:[ind,pit], state, country="india"}} = obj;
+        console.log(fname);
+        console.log(age);
+        console.log(hobby);
+        console.log(ind);
+        console.log(state);
+        console.log(country);
+        console.log(pit);
+        
+
+        let arr = [1,2,[2,3,[10,11]],4,5,[6,7]];
+       let newArr = arr.flat(2)
+        console.log(newArr);
+
+    </script>
+    
+</body>
+</html>
