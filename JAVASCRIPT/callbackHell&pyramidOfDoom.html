@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        setTimeout(()=>{
+            console.log('i am set time out fucntion');
+            setTimeout(() => {
+                console.log('i am set time out one');
+                setTimeout(() => {
+                    console.log('i am set time out two');
+                    setTimeout(() => {
+                        console.log('i am set time out three');
+                        setTimeout(() => {
+                            console.log('i am set time out four');
+                            setTimeout(() => {
+                                console.log('i am set time out five');
+                                setTimeout(() => {
+                                    console.log('i am set time out six');
+                                    setTimeout(() => {
+                                        console.log('i am set time out seven');
+                                        setTimeout(() => {
+                                            console.log('i am set time out eight');
+                                        }, 2000);
+                                    }, 2000);
+                                }, 2000);
+                            }, 2000);
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }, 2000);
+        },2000)
+
+        let data = "hey data"
+        console.log(data);
+
+    </script>
+    
+</body>
+</html>

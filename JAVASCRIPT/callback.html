@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // what is callback function?
+        // A function which is passed as an argument to another function is called a callback function.
+
+        function one(value, item){
+            // this is a callback function
+            console.log('i am function one')
+            console.log(value + item);
+        }
+        
+
+        function two(a,b, callback){
+
+            // this is a higher order function
+            console.log(a + b)
+            callback(40,50)
+        }
+        // dont pass callback function as a function in artgument, pass it as a value
+
+        two(10,20, one)
+
+        // two(10,20,(value,itemn)=>{
+        //     console.log('heyyyyy');
+        //      console.log(value + itemn);
+        // })
+
+        // two(10,20,function (){
+        //     console.log('heyyyyy');
+        // })
+
+
+    </script>
+    
+</body>
+</html>
