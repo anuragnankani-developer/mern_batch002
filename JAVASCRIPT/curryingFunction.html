@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addition(a,b,c,d){
+            return
+            console.log(a +b +c + d)
+            return
+        }
+        addition(10,20,30,40);
+
+        // curying function
+        function sum(a){
+           return function(b){ // value of one
+              return  function(c){ //value of two
+                return function(d){
+                   return  function(e){
+                    return a + b + c + d + e
+                   } // value of three
+                }
+                
+                }
+            }
+        }
+        let one = sum(1);
+        let two = one(2)
+        let three = two(3);
+        console.log(one);
+        console.log(two);
+        console.log(three);
+
+        console.log("value:",sum(5)(6)(7)(10)(20));
+
+    //    console.log(sum(1,2,3)); 
+
+    </script>
+    
+</body>
+</html>
