@@ -56,6 +56,16 @@ function scrollWindow(){
             window.scrollBy(100,0) // two parameters x-axis and y-axis
         }
 
+        let a = 10;
+        function redirectFunction(){
+            if( a == 10){
+// window.location.href=""
+location.assign('./index.html')
+            }else{
+                alert('Value doesnt match')
+            }
+            
+        }
 
 
 
