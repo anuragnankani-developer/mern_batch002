@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // shallow copy
+
+        let obj ={
+            name:"ravi",
+            age:22,
+            address:{
+                city:'indore'
+            }
+        };
+
+        let newObj = {...obj};
+        newObj.name = "kuldeep";
+        newObj.address.city = "bhopal"
+        newObj.hobby = "cricket";
+        newObj.address.state = "madhya pradesh"
+
+
+        console.log('obj:',obj);
+        console.log('newObj',newObj);
+
+        console.log('--------------------------------');
+
+        // deep copy
+
+        let anotherObj = {
+             name:"shweta",
+            age:22,
+            address:{
+                city:'indore'
+            }
+        };
+
+        // let cloneOfObj = structuredClone(anotherObj);
+        let cloneOfObj = JSON.parse(JSON.stringify(anotherObj));
+
+        cloneOfObj.address.state = "madhya pradesh"
+
+        console.log('clone:', cloneOfObj);
+        console.log('123', anotherObj);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

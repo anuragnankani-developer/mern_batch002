@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var a = 10;
+        setTimeout(() => {
+                console.log('Time is out');
+        },0);
+
+        let myPromise = new Promise((resolve, reject)=>{
+            resolve('Promise is resolved');
+            console.log('Output of promise');
+        })
+
+        myPromise.then((res)=>{
+            console.log(res);
+        })
+        
+         console.log(a);
+
+         // promise is resolved
+         // output of promise
+         // time is out
+         // 10
+
+
+        
+
+    </script>
+    
+</body>
+</html>
