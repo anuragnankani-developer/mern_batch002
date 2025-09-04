@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            fname:"deepak",
+            fmobile:9876565654,
+            eemail:"deepak@gmail.com"
+        }
+
+        let obj_1 = {
+            name:"alekh",
+            mobile:6767678987,
+            email:"alekhh@gmail.com"
+        }
+
+        const arr = [["name","chetan"],["city","indore"]]
+
+        console.log(Object.keys(obj))
+        console.log(Object.values(obj))
+        console.log(Object.entries(obj))
+        console.log(Object.fromEntries(arr))
+
+        Object.seal(obj);
+        Object.freeze(obj);
+
+        obj.name ="shweta";
+        obj.city ="indore"
+        console.log(obj.name)
+        console.log(obj.city)
+
+        let obj_new =Object.assign({}, obj, obj_1)
+        console.log(obj_new);
+
+        console.log(Object.hasOwnProperty("name",obj_1));
+
+
+
+        let firstObj ={
+            fname:"kuldeep",
+            fmobile:9876565654,
+            eemail:"kuldeep@gmail.com"
+        };
+
+        let secondObj = Object.create(firstObj); // fristOnj is the prototype of secondObj
+        secondObj.doublename ="abcd"
+        console.log("check:",secondObj.fname)
+        console.log("second:",secondObj.doublename)
+
+
+
+    </script>
+    
+</body>
+</html>

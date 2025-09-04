@@ -1,7 +1,8 @@
 function createRandomId(){
 return Date.now().toString(36) +  Math.random().toString(36).substr(2,8);
 }
-function handelSubmit(){
+function handelSubmit(event){
+  event.preventDefault()
    let firstName = document.getElementById('firstName').value;
    let lastName = document.getElementById('lastName').value;
    let userName = document.getElementById('userName').value;
@@ -11,16 +12,21 @@ function handelSubmit(){
    let password = document.getElementById('password').value;
    
    let allData = JSON.parse(localStorage.getItem('records')) || [];
-   let compareEmail = allData.some((value)=> value.email === emailAddress );
-   console.log(compareEmail)
-   
-   if(compareEmail){           `1 `
-   return alert('Email Id is already Registered')
-   }
 
    if(!firstName || !lastName || !userName || !emailAddress || !mobile || !gender || !password){
    return alert("All Fields are Required")
    }
+   let compareEmail = allData.some((value)=> value.email === emailAddress );
+   console.log(compareEmail)
+   if(compareEmail){
+   return alert('Email Id is already Registered')
+   }
+    let compareMobile = allData.some((value)=> value.mobile === mobile );
+   console.log(compareMobile)
+   
+   
+
+   
      const obj ={
         id: createRandomId(),
         firstName:firstName,
@@ -31,11 +37,9 @@ function handelSubmit(){
         email: emailAddress,
         password: password
     };
-
-
     allData.push(obj);
-
     localStorage.setItem('records', JSON.stringify(allData));
+    location.replace("./index.html");
    }   
 console.log('js file');
 
@@ -92,11 +96,7 @@ if(!email){
 debugger
 const filterData = allData.filter((value)=> value.email !== email );
 localStorage.setItem("records",JSON.stringify(filterData));
-
 location.reload()
-
-
-
 }
 
 function handelEdit(email){
@@ -138,8 +138,7 @@ function handelUpdate(event){
    let checkDuplicateEmail = allData.some((value)=> value.email === emailAddress )
    if(checkDuplicateEmail){
      return alert('Unique email required')
-   }
-    
+   }   
    }
 debugger
    allData[getTheIndex].firstName =firstName;
@@ -151,9 +150,14 @@ debugger
    allData[getTheIndex].mobile =mobile;
 
    localStorage.setItem('records', JSON.stringify(allData));
-  
-
 }
 showMyData()
+
+function showForm(){
+  const showTheForm = document.getElementById('my-form');
+  showTheForm.style.display="block"
+  const tableHide = document.getElementById('table-data');
+  tableHide.style.display="none"
+}
 
 

@@ -48,7 +48,8 @@
     </form>
   </div>
 </nav>
-    <form style="width: 50%; margin-left: 300px;">
+<button onclick="showForm()" > Add Data </button>
+    <form id="my-form" style="width: 50%; margin-left: 300px; display: none;">
       <h1>Student Registration</h1>
   <div class="mb-3">
     <label for="firstName" class="form-label"  >First Name</label>
@@ -91,14 +92,14 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary" onclick="handelSubmit()" >Submit</button>
+  <button type="submit" class="btn btn-primary" onclick="handelSubmit(event)" >Submit</button>
   <button type="submit" class="btn btn-primary" onclick="handelUpdate(event)" >Update</button>
 </form>
 
 <hr>
 <hr>
 
-<table class="table" style="width: 60%; margin-left: 200px;">
+<table id="table-data" class="table" style="width: 60%; margin-left: 200px;">
   <thead>
     <tr>
       <th scope="col">#</th>
